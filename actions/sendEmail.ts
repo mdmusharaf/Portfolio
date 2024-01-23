@@ -4,12 +4,14 @@ import React from "react";
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
+import { data } from "autoprefixer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_VBxntzdU_56QKGkACRDyEwZ76tzNMfPgC");
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
+  console.log("🚀 ~ sendEmail ~ message:", message, senderEmail);
 
   // simple server-side validation
   if (!validateString(senderEmail, 500)) {
@@ -26,13 +28,13 @@ export const sendEmail = async (formData: FormData) => {
   let data;
   try {
     data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
+      from: "Contact from <onboarding@resend.dev>",
       to: "mdmusharaf474@gmail.com",
       subject: "Message from contact form",
       reply_to: senderEmail,
       react: React.createElement(ContactFormEmail, {
-        message: message,
-        senderEmail: senderEmail,
+        message: message as string,
+        senderEmail: senderEmail as string,
       }),
     });
   } catch (error: unknown) {
@@ -45,3 +47,4 @@ export const sendEmail = async (formData: FormData) => {
     data,
   };
 };
+console.log(data);
