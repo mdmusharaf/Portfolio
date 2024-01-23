@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import corpcommentImg from "@/public/screencapture-localhost-3000-2023-08-20-10_29_56.png";
+import rmtdevImg from "@/public/treasury-today-logo.png";
+import wordanalyticsImg from "@/public/download.png";
 
 export const links = [
   {
@@ -35,51 +35,43 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Front-End Intern",
+    location: "KashTech Solutions",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Developing and maintaining web applications using Html,Css,Javascript and other related technologies.Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.Implementing responsive design and ensuring cross-browser compatibility.Participating in code reviews and providing constructive feedback to other developers.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "March 2021 - April 2021",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Aiiots Geek World Private Limited",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Developing and maintaining web applications using React.js and other related technologies.Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.Implementing responsive design and ensuring cross-browser compatibility.Participating in code reviews and providing constructive feedback to other developers.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Full Bright Commission",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "I worked as a frontend developer on this  project. Users can give public feedback to companies.",
+    tags: ["Html", "Sass", "Bootstrap", "JavaScript"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Treasury Today",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "The Treasury Today Group supply the best in international corporate treasury and finance news and intelligence. I was the front-end developer.",
+    tags: ["Html", "Sass", "Bootstrap", "JavaScript", "WordPress"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Centurion Invest",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A public web app for  global platform for managing your digital finances.",
+    tags: ["React", "Material Ui", "SQL", "Framer"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -98,10 +90,7 @@ export const skillsData = [
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
