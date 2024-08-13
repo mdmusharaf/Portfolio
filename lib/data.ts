@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/screencapture-localhost-3000-2023-08-20-10_29_56.png";
 import rmtdevImg from "@/public/treasury-today-logo.png";
 import wordanalyticsImg from "@/public/download.png";
+import ptmImg from "@/public/ptmImg.png";
 
 export const links = [
   {
@@ -73,6 +74,13 @@ export const projectsData = [
       "A public web app for  global platform for managing your digital finances.",
     tags: ["React", "Material Ui", "SQL", "Framer"],
     imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "PTM",
+    description:
+      "An intuitive platform designed to streamline and enhance the organization of parent-teacher meetings, ensuring efficient communication and scheduling.",
+    tags: ["React", ".NET", "Tailwind CSS"],
+    imageUrl: ptmImg,
   },
 ] as const;
 
